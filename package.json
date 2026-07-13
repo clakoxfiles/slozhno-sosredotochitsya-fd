@@ -1,0 +1,29 @@
+{
+  "name": "slozhno-sosredotochitsya-fd",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/clakoxfiles/slozhno-sosredotochitsya-fd#readme",
+  "bugs": {
+    "url": "https://github.com/clakoxfiles/slozhno-sosredotochitsya-fd/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clakoxfiles/slozhno-sosredotochitsya-fd.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "check": "prettier --check --config ./config/.prettierrc './**/*.{html,css,js}'",
+    "format": "prettier --write --config ./config/.prettierrc './**/*.{html,css,js}'",
+    "lint": "stylelint '**/*.css' --config ./config/stylelint.config.js",
+    "lintfix": "stylelint '**/*.css' --fix --config ./config/stylelint.config.js",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "dependencies": {
+    "prettier": "^3.9.5",
+    "stylelint": "^17.14.0"
+  }
+}
