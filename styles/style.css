@@ -10,7 +10,7 @@
 
 @media (width >= 768px) {
   .page {
-    padding: 20px 10px;
+    padding: 20px 20px;
   }
 }
 
@@ -144,9 +144,6 @@
   font-size: var(--text-size);
 }
 
-.content__text-container {
-}
-
 .content__heading {
   margin-bottom: 20px;
   font-size: inherit;
@@ -170,11 +167,41 @@
   text-shadow: 2px 2px var(--accent-color);
 }
 
-.content__advice .article__heading {
+.content__text-container-advice .article__heading {
   font-weight: normal;
 }
 
 .advices {
   font-size: inherit;
   margin-bottom: 20px;
+}
+
+@media (width >= 768px) {
+  .content {
+    gap: 80px;
+  }
+
+  .content__text-container-why-its-hard {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 20px;
+  }
+
+  .content__heading {
+    max-inline-size: 236px;
+  }
+
+  .content__text-container-advice {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+  }
+}
+
+@media (width >= 1024px) {
+  .content__article-container_concentration {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
 }
