@@ -5,7 +5,16 @@
   background-color: var(--background-color);
   font-size: var(--text-size);
   line-height: 1.3;
+  padding: 10px;
 }
+
+@media (width >= 768px) {
+  .page {
+    padding: 20px 10px;
+  }
+}
+
+/* Header */
 
 .header {
   block-size: 100vb;
@@ -13,7 +22,13 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   position: relative;
-  padding: 10px;
+  margin-bottom: 40px;
+}
+
+@media (width >= 768px) {
+  .header {
+    margin-bottom: 60px;
+  }
 }
 
 .header::before {
@@ -21,8 +36,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  top: 10px;
-  right: 10px;
+  top: 0;
+  right: 0;
   border-top: solid 1px var(--accent-color);
   border-right: solid 1px var(--accent-color);
 }
@@ -33,7 +48,7 @@
   width: 25px;
   height: 25px;
   bottom: 10px;
-  left: 10px;
+  left: 0;
   border-bottom: solid 1px var(--accent-color);
   border-left: solid 1px var(--accent-color);
 }
@@ -41,8 +56,8 @@
 .header__decor {
   justify-self: end;
   position: absolute;
-  top: 10px;
-  right: 38px;
+  top: 0;
+  right: 27px;
   text-transform: uppercase;
   line-height: 25px;
   color: var(--accent-color);
@@ -119,4 +134,47 @@
 .title-decor {
   color: var(--subheading-color);
   background-color: var(--accent-color);
+}
+
+/* Main */
+
+.content {
+  display: grid;
+  gap: 50px;
+  font-size: var(--text-size);
+}
+
+.content__text-container {
+}
+
+.content__heading {
+  margin-bottom: 20px;
+  font-size: inherit;
+  color: var(--accent-color);
+}
+
+.content__article:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.article__heading {
+  margin-bottom: 10px;
+  font-size: inherit;
+}
+
+.article__paragraph {
+  color: var(--text-content-color);
+}
+
+.article__text-link {
+  text-shadow: 2px 2px var(--accent-color);
+}
+
+.content__advice .article__heading {
+  font-weight: normal;
+}
+
+.advices {
+  font-size: inherit;
+  margin-bottom: 20px;
 }
