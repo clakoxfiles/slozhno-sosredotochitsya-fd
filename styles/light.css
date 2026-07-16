@@ -22,4 +22,12 @@
     --heading-color: rgb(255 194 230 / 1);
     --subheading-color: rgb(53 52 48 / 1);
   }
+
+  .header__decor {
+    display: none;
+  }
+
+  .header__decor::after {
+    display: none;
+  }
 }

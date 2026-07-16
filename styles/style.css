@@ -45,7 +45,6 @@
 }
 
 .header__decor {
-  justify-self: end;
   position: absolute;
   top: 20px;
   right: 49px;
@@ -258,6 +257,7 @@ html.theme-light .header__decor::after {
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -308,7 +308,7 @@ html.theme-light .header__decor::after {
 
 .footer {
   block-size: 100vb;
-  min-block-size: 667px;
+  min-block-size: 668px;
   display: flex;
   align-items: center;
   justify-content: center;
