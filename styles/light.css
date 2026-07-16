@@ -1,2 +1,23 @@
 :root.theme-light {
+  --background-image: url(../images/cover-image-light.png);
+  --background-color: rgba(255, 194, 230, 1);
+  --accent-color: rgb(255 141 203);
+  --text-content-color: rgba(53, 52, 48, 1);
+  --button-color: rgba(53, 52, 48, 1);
+  --content-heading-color: rgba(53, 52, 48, 1);
+  --heading-color: rgba(255, 194, 230, 1);
+  --subheading-color: rgba(53, 52, 48, 1);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --background-image: url(../images/cover-image-light.png);
+  --background-color: rgba(255, 194, 230, 1);
+  --accent-color: rgb(255 141 203);
+  --text-content-color: rgba(53, 52, 48, 1);
+  --button-color: rgba(53, 52, 48, 1);
+  --content-heading-color: rgba(53, 52, 48, 1);
+  --heading-color: rgba(255, 194, 230, 1);
+  --subheading-color: rgba(53, 52, 48, 1);
+  }
 }
