@@ -1,6 +1,6 @@
 :root.theme-light {
   --background-image: url(../images/cover-image-light.png);
-  --background-color: rgb(255 194 230 / 1);
+  --background-color: rgba(255, 241, 247, 1);
   --accent-color: rgb(255 141 203);
   --text-content-color: rgb(53 52 48 / 1);
   --button-color: rgb(53 52 48 / 1);
