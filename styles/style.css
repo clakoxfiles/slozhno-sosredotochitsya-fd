@@ -20,12 +20,6 @@
   padding: 10px;
 }
 
-@media (width >= 768px) {
-  .header {
-    margin-bottom: 60px;
-  }
-}
-
 .header::before,
 .footer::before {
   content: '';
@@ -213,12 +207,6 @@ html.theme-light .header__decor::after {
   }
 }
 
-@media (width >= 1024px) {
-  .content__heading {
-    max-inline-size: 315px;
-  }
-}
-
 @media (width >= 768px) {
   .content {
     gap: 80px;
@@ -237,6 +225,10 @@ html.theme-light .header__decor::after {
 }
 
 @media (width >= 1024px) {
+  .content__heading {
+    max-inline-size: 315px;
+  }
+
   .content__text-container-why-its-hard {
     display: grid;
     grid-template-columns: 0.48fr 1fr;
@@ -262,12 +254,6 @@ html.theme-light .header__decor::after {
   gap: 10px;
 }
 
-@media (width <= 767px) {
-  .gallery {
-    margin-bottom: 30px;
-  }
-}
-
 .gallery__image {
   inline-size: 100%;
   block-size: 100%;
@@ -275,42 +261,9 @@ html.theme-light .header__decor::after {
   display: block;
 }
 
-/* Footer */
-
-.footer {
-  block-size: 100vb;
-  min-block-size: 667px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.footer__heading {
-  font-weight: bold;
-  font-size: clamp(7.25rem, 5.769rem + 6.317vw, 9.813rem);
-  line-height: 82.5%;
-  color: var(--heading-color);
-  text-shadow: 2px 2px var(--accent-color);
-}
-
-@media (width >= 768px) {
-  .header {
-    padding: 20px;
-    margin-bottom: 40px;
-  }
-
-  .header__heading {
-    margin-left: -20px;
-  }
-
-  .content {
-    padding: 20px;
-    margin-bottom: 40px;
-  }
-
-  .footer {
-    padding: 20px;
+@media (width <= 767px) {
+  .gallery {
+    margin-bottom: 30px;
   }
 }
 
@@ -348,6 +301,47 @@ html.theme-light .header__decor::after {
   .street {
     grid-column: 2 / 4;
     grid-row: 3 / 5;
+  }
+}
+
+/* Footer */
+
+.footer {
+  block-size: 100vb;
+  min-block-size: 667px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.footer__heading {
+  font-weight: bold;
+  font-size: clamp(7.25rem, 5.769rem + 6.317vw, 9.813rem);
+  line-height: 82.5%;
+  color: var(--heading-color);
+  text-shadow: 2px 2px var(--accent-color);
+}
+
+/* Отступы */
+
+@media (width >= 768px) {
+  .header {
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  .header__heading {
+    margin-left: -20px;
+  }
+
+  .content {
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  .footer {
+    padding: 20px;
   }
 }
 
