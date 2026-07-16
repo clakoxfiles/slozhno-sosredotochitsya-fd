@@ -1,23 +1,24 @@
 :root.theme-light {
   --background-image: url(../images/cover-image-light.png);
-  --background-color: rgba(255, 194, 230, 1);
+  --background-color: rgb(255 194 230 / 1);
   --accent-color: rgb(255 141 203);
-  --text-content-color: rgba(53, 52, 48, 1);
-  --button-color: rgba(53, 52, 48, 1);
-  --content-heading-color: rgba(53, 52, 48, 1);
-  --heading-color: rgba(255, 194, 230, 1);
-  --subheading-color: rgba(53, 52, 48, 1);
+  --text-content-color: rgb(53 52 48 / 1);
+  --button-color: rgb(53 52 48 / 1);
+  --button-hover-color: rgb(50 49 45 / 0.4);
+  --content-heading-color: rgb(53 52 48 / 1);
+  --heading-color: rgb(255 194 230 / 1);
+  --subheading-color: rgb(53 52 48 / 1);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-  --background-image: url(../images/cover-image-light.png);
-  --background-color: rgba(255, 194, 230, 1);
-  --accent-color: rgb(255 141 203);
-  --text-content-color: rgba(53, 52, 48, 1);
-  --button-color: rgba(53, 52, 48, 1);
-  --content-heading-color: rgba(53, 52, 48, 1);
-  --heading-color: rgba(255, 194, 230, 1);
-  --subheading-color: rgba(53, 52, 48, 1);
+    --background-image: url(../images/cover-image-light.png);
+    --background-color: rgb(255 194 230 / 1);
+    --accent-color: rgb(255 141 203);
+    --text-content-color: rgb(53 52 48 / 1);
+    --button-color: rgb(53 52 48 / 1);
+    --content-heading-color: rgb(53 52 48 / 1);
+    --heading-color: rgb(255 194 230 / 1);
+    --subheading-color: rgb(53 52 48 / 1);
   }
 }
